@@ -59,6 +59,11 @@ describe ScopedId do
     model.valid?.should be_true
   end
 
+  it "is valid if a record exists with a nil scoped id" do
+    BaseModel.create # owner_scoped_id == nil
+    Model.new.valid?.should be_true
+  end
+
   it "raises an exception if scope is not specified" do
     expect{
       Class.new(BaseModel) do

@@ -23,7 +23,7 @@ module ScopedId
 
         attr_readonly attr_name
 
-        validates_uniqueness_of attr_name, scope: scope
+        validates_uniqueness_of attr_name, scope: scope, allow_nil: true
       end
 
       def scoped_ids_definitions
