@@ -6,7 +6,7 @@ Generates scoped unique identifiers.
 
 Add `scoped_id` to your Gemfile:
 
-    gem 'scoped_id', '~> 0.0.1'
+    gem 'scoped_id', '~> 0.0.2'
 
 ## Usage
 
